@@ -1,663 +1,134 @@
 .body{
+  padding: 0;
+  box-sizing: border-box;
   margin: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   overflow-x: hidden;
 }
 
-.containerzao{
-  grid-template-columns: repeat(4, 1fr);
-}
 
-header{
-  margin: 0;
-  background-color: #D9D9D9;
-  width: 100%;
+.header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
 }
 
-  .carshop{
-      margin-right: 10px;
-  }
-
-.imgheader{
-  width: 100%;
-  object-fit: cover;
-}
-
-.texto1{
-  position: absolute;
-  font-family: "Spicy Rice", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-  right: 50px;
-  top: 165px;
-}
-
-.texto2{
-  position: absolute;
-  font-family: "Silkscreen", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 15px;  
-  right: 40px;
-  top: 185px;  
-}
-.texto3{
-  position: absolute;
-  font-family: "Spicy Rice", serif;
-  font-weight: 400;
-  font-style: normal;
-  right: 10px;
-  top: 200px;
-}
-
-
-.container2{
-  width: 100%;
-  height: 150px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-justify-content: center;
-margin-top: 10px;
-position: relative;
-margin-bottom: 10px;
-}
-
-.imagem1{
-  width: 181px;
-  height: 120px;
-  position: absolute;
-  top: 13px;
-  border-radius: 10px;    
-  margin-left: 2px;
-  left: 60px;
-}
-
-.textoimgs{
-  font-size: 10px;
-  position: absolute;
-  right: 66px;
-}
-
-.textoimgs2{
-  font-size: 10px;
-  position: absolute;
-  right: 66px;
-  top: 15px;
-}
-
-.textoimgs3{
-  font-size: 10px;
-  position: absolute;
-  right: 64px;
-  top: 110px;
-}
-
-.textoimgs4{
-  font-size: 10px;
-  position: absolute;
-  right: 77px;
-  top: 2px;
-}
-
-.textoimgs5{
-  font-size: 10px;
-  position: absolute;
-  right: 79px;
-  top: 2px;
-}
-
-.textoimgs6{
-  font-size: 10px;
-  position: absolute;
-  right: 59px;
-  top: 15px;
-}
-
-.textoimgs7{
-  font-size: 10px;
-  position: absolute;
-  right: 55px;
-  top: 5px;
-}
-
-.textoimgs8{
-  font-size: 10px;
-  position: absolute;
-  right: 55px;
-  top: 5px;
-}
-
-.textoimgs9{
-  font-size: 10px;
-  position: absolute;
-  right: 79px;
-  top: 5px;
-}
-
-.textoimgs10{
-  font-size: 10px;
-  position: absolute;
-  right: 53px;
-  top: 15px;
-}
-
-.cifrao{
+.header-left img {
   width: 50px;
-  position: absolute;
-  right: 60px;
-  top: 53px;
+  height: 50px;
 }
 
-.cifrao1{
-  width: 50px;
-  position: absolute;
-  right: 60px;
-  top: 45px;
+.header-right {
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.gridItem{
-  width: 245px;
-  height: 136px;
-  border-radius: 20px;
-  padding: 5px;
-  margin: 0;
-  transition: all 0.3s ease;
-}
 
-.gridItem:hover{
-  width: 300px;
-  height: 150px;
-  transition: all 0.5s ease;
-  background-color: black;
-  color: white;
-}
-
-.orden1{
-  grid-row: 2
-
-}
-.orden2{
- grid-row: 2;
-}
-.orden3{
-  grid-column: 1/3;
-}
-
-.red{
-  background-color: #D9D9D9;
-}
-
-.rodape{
-  width: 100%;
-  background-color: #D9D9D9;
-  height: 109px;
-}
-
-.iconesrodape{
-  width: 200px;
-  height: 70px;
+.retangulo1{
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  left: 8px;
-  margin-top: 5px;
-}
-
-.iconecarro{
-  width: 38px;
-  position: absolute;
-  left: 160px;
-  margin-top: 5px;
-  margin-top: 0;
-}
-
-.iconeinsta{
-  width: 38px;
-  position: absolute;
-  left: 90px;
-  margin-top: 33px;
-}
-
-.iconeface{
-  width: 38px;
-  position: absolute;
-  left: 130px;
-  margin-top: 33px;
-}
-
-.iconeyoutube{
-  width: 38px;
-  position: absolute;
-  left: 170px;
-  margin-top: 33px;
-}
-
-.iconeinsta2{
-  width: 38px;
-  position: absolute;
-  left: 210px;
-  margin-top: 33px;
-}
-
-.textorodape{
-  position: absolute;
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-  font-size: 15px;
-  left: 95px;
-}
-
-.textorodape1{
-  position: absolute;
-  font-family: "Rajdhani", sans-serif;
-font-weight: 300;
-font-style: normal;
-  font-style: normal;
-  font-size: 15px;
-  left: 129px;
-  margin-top: 75px;
-}
-
-.textorodape2{
-  position: absolute;
-  font-family: "Rajdhani", sans-serif;
-font-weight: 300;
-font-style: normal;
-  font-style: normal;
-  font-size: 13px;
-  left: 115px;
-  margin-top: 90px;
-}
-
-.porcima{
-  width: 245px;
-  height: 146px;
-  border-radius: 20px;
-  background-color: #D9D9D9;
-  position: absolute;
-  top: 587px;
-  left: 59px;
-  opacity: 0.8;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.esgotamento{
-  font-family: "Oswald", sans-serif;
-font-optical-sizing: auto;
-font-weight: weight;
-font-style: normal;
-color: red;
-font-size: 30px;
-}
-
-.circulo{
-  width: 37px;
-  height: 37px;
-  border-radius: 100%;
-  background-color: red;
-  position: relative;
-  position: absolute;
-  top: 570px;
-  left: 285px;
-}
-
-.circulo2{
-  width: 37px;
-  height: 37px;
-  border-radius: 100%;
-  background-color: blue;
-  position: relative;
-  position: absolute;
-  top: 410px;
-  left: 285px;
-}
-
-.circulo3{
-  width: 37px;
-  height: 37px;
-  border-radius: 100%;
-  background-color: #00F4FD;
-  position: relative;
-  position: absolute;
-  top: 255px;
-  left: 285px;
-}
-
-.textocirculo{
-  font-size: 13px;
-  margin: 5px 0 6px 6px;
-  color: white;
-}
-
-.textocirculo2{
-  font-size: 13px;
-  margin: 5px 0 6px 6px;
-}
-
-@media screen and (min-width: 1086px){
-
-  body{
+  flex-direction: center;
   width: 100%;
-  height: auto;
-  margin: 0;
-}
-
-.containerzao {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr) 1fr; 
-  gap: 20px; 
+  height: 250px;
   margin-top: 30px;
-  position: relative; 
 }
 
-.imgheader {
-  width: 100%;
-  height: 271px;
-}
-
-.imagem1 {
-  width: 309px;
-  height: 167px;
-  border-radius: 10px;
-  position: relative;
-  bottom: 10px; 
-  left: 12px;
-  
-}
-
-.imagem2{
-  width: 226px;
-  height: 286px;
-  border-radius: 10px;
-  position: relative;
-  position: absolute;
-  top: 70px;
-  left: 65px;
-  z-index: 1;
-}
-
-.blue{
-  background-color: black;
-  opacity: 0;
-}
-
-.gridItem {
-  height: 167px;
-  border-radius: 10px;
-  position: absolute;
-  top: 10px;
-  left: 18px;
-  transition: all 0.3s ease; 
-}
-
-.rodape{
-  width: 100%;
-  background-color: #D9D9D9;
-  height: 109px;
-  margin-top: 60px;
-}
-  
-.circulo3{
-  width: 37px;
-  height: 37px;
+.img{
   border-radius: 100%;
-  position: absolute;
-  top: 255px;
-  left: 285px;
 }
 
-.cifrao{
-opacity: 0;
-}
-
-.cifrao1{
-opacity: 0;
-}
-
-.textoimgs{
-  position: absolute;
-  font-size: 20px;
-  right: 210px;
-  top: 130px;
-  color: white;
-}
-
-.textoimgs2{
-  font-size: 20px;
-  position: absolute;
-  right: 190px;
-  top: 150px;
-  color: white;
-}
-
-.textoimgs3{
-  font-size: 20px;
-  position: absolute;
-  right: 200px;
-  top: 19px;
-  color: white;
-}
-
-.textoimgs4{
-  position: absolute;
-  font-size: 20px;
-  right: 250px;
-  top: 130px;
-  color: white;
-}
-
-.textoimgs5{
-  font-size: 15px;
-  position: absolute;
-  right: 250px;
-  top: 150px;
-  color: white;
-}
-
-.textoimgs6{
-  font-size: 15px;
-  position: absolute;
-  right: 200px;
-  top: 165px;
-  color: white;
-}
-
-.textoimgs7{
-  font-size: 20px;
-  position: absolute;
-  right: 165px;
-  top: 155px;
-  color: white;
-}
-
-.textoimgs8{
-  position: absolute;
-  font-size: 20px;
-  right: 185px;
-  top: 130px;
-  color: white;
-}
-
-
-.textoimgs9{
-  position: absolute;
-  font-size: 20px;
-  right: 220px;
-  top: 130px;
-  color: white;
-}
-
-
-.textoimgs10{
-  font-size: 20px;
-  position: absolute;
-  right: 160px;
-  top: 150px;
-  color: white;
-}
-
-
-.porcima{
-  width: 309px;
-  height: 167px;
-  border-radius: 10px;
-  background-color: #D9D9D9;
-  position: absolute;
-  top: 398px;
-  left: 704px;
-  opacity: 0.8;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.iconesrodape{
-  width: 200px;
-  height: 70px;
+.textos{
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  left: 500px;
-  top: 775px;}
-
-
-.iconecarro{
-  width: 150px;
-  position: absolute;
-  left: 20px;
-  margin-top: 15px;
-}
-
-.iconeinsta{
-  width: 50px;
-  position: absolute;
-  left: 80px;
-  margin-top: 33px;
-}
-
-.iconeface{
-  width: 50px;
-  position: absolute;
-  left: 127px;
-  margin-top: 33px;
-}
-
-.iconeyoutube{
-  width: 50px;
-  position: absolute;
-  left: 220px;
-  margin-top: 33px;
-}
-
-.iconeinsta2{
-  width: 50px;
-  position: absolute;
-  left: 174px;
-  margin-top: 33px;
-}
-
-.textorodape{
-  position: absolute;
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-  font-size: 15px;
-  left: 590px;
-}
-
-.textorodape1{
-  position: absolute;
-  font-size: 20px;
-  left: 1229px;
-  margin-top: 5px;
-  color: black;
-}
-
-.textorodape2{
-  position: absolute;
-  font-size: 20px;
-  left: 1229px;
-  margin-top: 50px;
-  color: black;
-}
-
-
-.circulo{
-  width: 37px;
-  height: 37px;
-  border-radius: 100%;
-  background-color: red;
-  position: relative;
-  position: absolute;
-  top: 385px;
-  left: 988px;
-}
-
-.circulo2{
-  width: 37px;
-  height: 37px;
-  border-radius: 100%;
-  background-color: blue;
-  position: relative;
-  position: absolute;
-  top: 385px;
-  left: 648px;
-}
-
-.circulo3{
-  width: 37px;
-  height: 37px;
-  border-radius: 100%;
-  background-color: #00F4FD;
-  position: relative;
-  position: absolute;
-  top: 385px;
-  left: 308px;
+  flex-direction: column;
+  margin-left: 100px;
 }
 
 .texto1{
-  position: absolute;
-  font-family: "Spicy Rice", serif;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 40px;
-  right: 50px;
-  top: 85px;
-  color: white;
 }
 
 .texto2{
-  position: absolute;
-  font-family: "Silkscreen", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 40px;  
-  right: 60px;
-  top: 133px;  
-  color: white;
+  font-size: 20px;
 }
-.texto3{
-  font-size: 40px;
-  position: absolute;
-  font-family: "Spicy Rice", serif;
+
+.retangulo2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 400px;
+  margin-top: 100px;
+}
+
+.cards{
+  background-color: gray;
+border-radius: 30px;
+margin: 20px;
+width: 252px;
+  height: 271px;
+  margin-left: 50px;
+  text-align: center;
+}
+
+.partebaixocards{
+  background-color: black;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  width: 252px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textodocard{
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
-  right: 75px;
-  top: 180px;
-  color: white;
+font-size: 18px;
+  color: white;  
+  margin-top: 10px; 
+}
+
+.imagemcard{
+width: 130px;
+height: 150px;
+  margin-top: 50px;
+  margin-bottom: 42px;
 }
 
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+
+}
+
+.footer-left img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer-right {
+  font-size: 18px;
+  font-weight: normal;
+  color: #333;
 }
